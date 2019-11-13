@@ -80,22 +80,8 @@ $(document).ready(function () {
     });
 
     $(function () {
-        let choices = [
-                'Gengar',
-                'Pikachu',
-                'Lapras',
-                'Coffing',
-                'Snorlax',
-                'Geodude',
-                'Meowth',
-                'MewTwo',
-                'Articuno',
-                'Scyther',
-                'Voltorb',
-                'Jigglypuff',
-                'Raichu',
-                'Digglet'
-            ];
+        let choices = ['Tracy Gill','Victoria Chambers','Mindy Reynolds','Philip Wheeler',
+                        'Dale Byrd','Cora Clayton','Dawn Wood','Rodolfo Aguilar','Dan Oliver'];
         choices.sort();
         $("#user-search").autocomplete({
             source: choices

@@ -57,7 +57,7 @@ let dailyTrafficData = {
     data: {
         labels: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
         datasets: [{
-            data: [300, 150, 200, 200, 250, 150, 350],
+            data: [75, 115, 175, 125, 225, 115, 115],
             backgroundColor: 'rgba(115, 120, 186, .2)',
             borderColor: 'rgba(115, 120, 186, .5)',
             borderWidth: 1,
@@ -75,8 +75,8 @@ let dailyTrafficData = {
             yAxes: [{
                 ticks: {
                     min: 0,
-                    max: 400,
-                    stepSize: 100,
+                    max: 250,
+                    stepSize: 50,
                     padding: 20,
                 },
                 gridLines: {
@@ -322,7 +322,7 @@ let dailyTrafficChartData = {
     data: {
         labels: ['S', 'M', 'T', 'W', 'Th', 'F', 'S'],
         datasets: [{
-            data: [300, 150, 200, 200, 250, 150, 350],
+            data: [75, 115, 175, 125, 225, 215, 115],
             backgroundColor: 'rgba(115, 120, 186, 1)',
             borderColor: 'rgba(115, 120, 186, .5)',
             borderWidth: 1,
@@ -336,8 +336,8 @@ let dailyTrafficChartData = {
             yAxes: [{
                 ticks: {
                     min: 0,
-                    max: 400,
-                    stepSize: 100,
+                    max: 250,
+                    stepSize: 50,
                     padding: 20,
                 },
                 gridLines: {
@@ -365,7 +365,7 @@ let mobileUsersChart = new Chart(mobileUsers, {
             'Desktop'
         ],
         datasets: [{
-            data: [70, 80, 260],
+            data: [112, 132, 409],
             backgroundColor: ['#80b0bd',
                               '#90c694',
                               '#7378ba']
@@ -377,7 +377,7 @@ let mobileUsersChart = new Chart(mobileUsers, {
             labels: {
 //                padding: 18,
                 boxWidth: 26,
-                fontSize: 14,
+                fontSize: 24,
             }
         }
     },

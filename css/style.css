@@ -5,6 +5,7 @@
   list-style: none;
   outline: none;
   border: none;
+  font-family: 'Fira Sans', sans-serif;
 }
 
 a {
@@ -545,7 +546,7 @@ button#cancel {
   line-height: 24px;
   font-size: 14px;
   font-weight: bold;
-  font-family: Trebuchet, Arial, sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   transition: all 300ms ease-in 0s;
 }
 
