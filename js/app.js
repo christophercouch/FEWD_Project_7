@@ -2,7 +2,7 @@ $(document).ready(function() {
     $('#close-button').click(function() {
       $('#alert').fadeOut(300);
     });
-    $('#notification-bell').click(function() {
+    $('#bell').click(function() {
       if ($('#notifications').css('visibility') == 'hidden') {
         $('#notifications').css('visibility', 'visible');
       } else {

@@ -69,10 +69,10 @@ header li {
 #profile-name, .divider-v {
   display: none;
 }
-#notification-bell {
+#bell {
   position: relative;
 }
-#notification-bell:hover {
+#bell:hover {
   cursor: pointer;
 }
 #icon-alert {
