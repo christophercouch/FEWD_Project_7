@@ -357,7 +357,7 @@ h3 {
 
 .divider-h {
   margin: 10px auto;
-  border-top: 1px solid grey;
+  border-top: 1px solid rgb(223, 223, 223);
 }
 
 .join-date,

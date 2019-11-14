@@ -1,12 +1,7 @@
-let mainTraffic = document.querySelector('#traffic-chart').getContext('2d');
-let hourlyButton = $('#hourly-traffic-button');
-let dailyButton = $('#daily-traffic-button');
-let weeklyButton = $('#weekly-traffic-button');
-let monthlyButton = $('#monthly-traffic-button');
-let buttonArray = [hourlyButton, dailyButton, weeklyButton, monthlyButton];
+let { mainTraffic, hourlyButton, buttonArray, dailyButton, weeklyButton, monthlyButton } = letCombine();
 let hourlyTrafficData = {
     type: 'line',
-    data: {
+    _data: {
         labels: ['10am', '11am', '12pm', '1pm',
                  '2pm', '3pm', '4pm', '5pm'],
         datasets: [{
@@ -20,29 +15,23 @@ let hourlyTrafficData = {
             lineTension: 0,
         }]
     },
+    get data() {
+        return this._data;
+    },
+    set data(value) {
+        this._data = value;
+    },
     options: {
-        legend: {
-            display: false
-        },
-        scales: {
-            yAxes: [{
-                ticks: {
-                    min: 0,
-                    max: 500,
-                    stepSize: 50,
-                    padding: 20,
-                },
-                gridLines: {
-                    drawTicks: false
-                }
-            }],
+        legend: {display: false},
+        scales: {yAxes: [{ticks: {min: 0,max: 500,stepSize: 50,padding: 20,},
+                 gridLines: {drawTicks: false}}],
         }
     }
 };
 
 let dailyTrafficData = {
     type: 'line',
-    data: {
+    _data: {
         labels: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
         datasets: [{
             data: [75, 115, 175, 125, 225, 215, 115],
@@ -53,7 +42,13 @@ let dailyTrafficData = {
             pointBorderColor: 'rgba(115, 120, 186, 1)',
             pointRadius: 6,
             lineTension: 0,
-            }]
+        }]
+    },
+    get data() {
+        return this._data;
+    },
+    set data(value) {
+        this._data = value;
     },
     options: {
         legend: {
@@ -264,3 +259,13 @@ let mobileUsersChart = new Chart(mobileUsers, {
         }
     },
 });
+
+function letCombine() {
+    let mainTraffic = document.querySelector('#traffic-chart').getContext('2d');
+    let hourlyButton = $('#hourly-traffic-button');
+    let dailyButton = $('#daily-traffic-button');
+    let weeklyButton = $('#weekly-traffic-button');
+    let monthlyButton = $('#monthly-traffic-button');
+    let buttonArray = [hourlyButton, dailyButton, weeklyButton, monthlyButton];
+    return { mainTraffic, hourlyButton, buttonArray, dailyButton, weeklyButton, monthlyButton };
+}
