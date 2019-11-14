@@ -75,7 +75,7 @@ header li {
 #bell:hover {
   cursor: pointer;
 }
-#icon-alert {
+#icon {
   background-color: #81c98f;
   height: 7px;
   width: 7px;
@@ -197,14 +197,14 @@ h3 {
   padding: 10px;
   margin: 0 0 20px;
 }
-#alert-heading, #close-button {
+#alert-heading, #close {
   display: inline-block;
   font-weight: 800;
 }
 #alert-heading {
   margin: 0 20px 0 10px;
 }
-#close-button {
+#close {
   margin: 0 10px 0 20px;
   cursor: pointer;
 }
@@ -405,7 +405,7 @@ button#cancel {
   flex: 2 0 auto;
   min-width: 180px;
 }
-.onoffswitch {
+.power {
   flex-shrink: 0;
   position: relative;
   width: 85px;
@@ -414,10 +414,10 @@ button#cancel {
   -moz-user-select: none;
   -ms-user-select: none;
 }
-.onoffswitch-checkbox {
+.check {
   display: none;
 }
-.onoffswitch-label {
+.label {
   display: block;
   overflow: hidden;
   cursor: pointer;
@@ -425,13 +425,13 @@ button#cancel {
   border: 2px solid darkgrey;
   border-radius: 20px;
 }
-.onoffswitch-inner {
+.inner {
   display: block;
   width: 200%;
   margin-left: -100%;
   transition: all 300ms ease-in 0s;
 }
-.onoffswitch-inner:before, .onoffswitch-inner:after {
+.inner:before, .inner:after {
   display: block;
   box-sizing: border-box;
   padding: 0;
@@ -446,22 +446,22 @@ button#cancel {
   font-family: 'Fira Sans', sans-serif;
   transition: all 300ms ease-in 0s;
 }
-.onoffswitch-inner:before {
+.inner:before {
   content: 'ON';
   padding-left: 10px;
 }
-.onoffswitch-inner:after {
+.inner:after {
   content: 'OFF';
   padding-right: 10px;
   text-align: right;
 }
-.onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-inner {
+.check:checked+.label .inner {
   margin-left: 0;
 }
-.onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-inner:before, .onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-inner:after {
+.check:checked+.label .inner:before, .check:checked+.label .inner:after {
   background-color: #7379ba;
 }
-.onoffswitch-switch {
+.switch {
   display: block;
   background: white;
   width: 22px;
@@ -474,7 +474,7 @@ button#cancel {
   border-radius: 50%;
   transition: all 300ms ease-in 0s;
 }
-.onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-switch {
+.check:checked+.label .switch {
   right: 0px;
 }
 @media (min-width: 769px) {

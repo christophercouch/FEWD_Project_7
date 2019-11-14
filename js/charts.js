@@ -239,7 +239,7 @@ let {mainTraffic,hourlyButton,buttonArray,dailyButton,weeklyButton,monthlyButton
       legend: {
         position: 'right',
         labels: {
-          boxWidth: 26,
+          boxWidth: 24,
           fontSize: 24,
         }
       }

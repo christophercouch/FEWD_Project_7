@@ -1,6 +1,6 @@
 $(document).ready(function() {
-    $('#close-button').click(function() {
-      $('#alert').fadeOut(300);
+    $('#close').click(function() {
+      $('#alert').fadeOut(200);
     });
     $('#bell').click(function() {
       if ($('#notifications').css('visibility') == 'hidden') {
@@ -8,7 +8,7 @@ $(document).ready(function() {
       } else {
         $('#notifications').fadeToggle(300, 'linear');
       }
-      $('#icon-alert').fadeOut(300);
+      $('#icon').fadeOut(300);
       return false;
     });
     $(document).click(function() {
@@ -39,28 +39,28 @@ $(document).ready(function() {
       event.preventDefault;
       let timezone = $('#timezone').val();
       localStorage.setItem('myTimeZone', timezone);
-      let email = $('#onoffswitch-email').prop('checked');
+      let email = $('#email').prop('checked');
       localStorage.setItem('myEmailSetting', email);
-      let privacy = $('#onoffswitch-privacy').prop('checked');
+      let privacy = $('#profile').prop('checked');
       localStorage.setItem('myPrivacySetting', privacy);
     });
     $('#timezone').val(localStorage.getItem('myTimeZone'));
     if (localStorage.getItem('myEmailSetting') == 'true') {
-      $('#onoffswitch-email').prop('checked', true);
+      $('#email').prop('checked', true);
     } else {
-      $('#onoffswitch-email').prop('checked', false);
+      $('#email').prop('checked', false);
     }
     if (localStorage.getItem('myPrivacySetting') == 'true') {
-      $('#onoffswitch-privacy').prop('checked', true);
+      $('#profile').prop('checked', true);
     } else {
-      $('#onoffswitch-privacy').prop('checked', false);
+      $('#profile').prop('checked', false);
     }
     $('#cancel').click(function(event) {
       event.preventDefault();
       localStorage.clear();
       $('#timezone').val('');
-      $('#onoffswitch-email').prop('checked', false);
-      $('#onoffswitch-privacy').prop('checked', false);
+      $('#email').prop('checked', false);
+      $('#profile').prop('checked', false);
     });
     $(function() {
       let choices = ['Tracy Gill', 'Victoria Chambers', 'Mindy Reynolds', 'Philip Wheeler', 'Dale Byrd', 'Cora Clayton', 'Dawn Wood', 'Rodolfo Aguilar', 'Dan Oliver'];
