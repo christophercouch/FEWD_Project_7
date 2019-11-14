@@ -27,7 +27,7 @@ $(document).ready(function () {
         $('#message-form').hide();
 
         if ($('#user-search').val().length === 0 || $('#message').val().length === 0) {
-            $('#message-user').append('<div id="error"><p>Please include both a user name and a message.  Fields cannot be empty.</p><button id="try-again">Try Again</button></div>')
+            $('#message-user').append('<div id="error"><p>Enter a user and a message.</p><button id="try-again">Try Again</button></div>')
 
             $('#try-again').click(function () {
                 $('#error').remove();
@@ -35,7 +35,7 @@ $(document).ready(function () {
             });
         }
         else if ($('#user-search').val().length > 0) {
-            $('#message-user').append('<div id="confirmation"><p>Message delivered!</p><button id="new-message">New Message</button></div>')
+            $('#message-user').append('<div id="confirmation"><p>Message delivered!</p><button id="new-message">Send Message</button></div>')
 
             $('#new-message').click(function () {
                 $('#confirmation').remove();

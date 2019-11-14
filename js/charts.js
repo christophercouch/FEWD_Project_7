@@ -54,18 +54,8 @@ let dailyTrafficData = {
         legend: {
             display: false
         },
-        scales: {
-            yAxes: [{
-                ticks: {
-                    min: 0,
-                    max: 250,
-                    stepSize: 50,
-                    padding: 20,
-                },
-                gridLines: {
-                    drawTicks: false
-                }
-            }],
+        scales: {yAxes: [{ticks: {min: 0,max: 250,stepSize: 50,padding: 20,},
+                     gridLines: {drawTicks: false}}],
         }
     }
 };
@@ -101,17 +91,8 @@ let weeklyTrafficData = {
                     }
                 }
                     }],
-            yAxes: [{
-                ticks: {
-                    min: 0,
-                    max: 2500,
-                    stepSize: 500,
-                    padding: 20,
-                },
-                gridLines: {
-                    drawTicks: false
-                }
-            }],
+            yAxes: [{ticks: {min: 0,max: 2500,stepSize: 500,padding: 20,},
+                     gridLines: {drawTicks: false}}],
         }
     }
 };
@@ -137,17 +118,8 @@ let monthlyTrafficData = {
             display: false
         },
         scales: {
-            yAxes: [{
-                ticks: {
-                    min: 0,
-                    max: 25000,
-                    stepSize: 3125,
-                    padding: 20,
-                },
-                gridLines: {
-                    drawTicks: false
-                }
-            }],
+            yAxes: [{ticks: {min: 0,max: 25000,stepSize: 3125,padding: 20,},
+                     gridLines: {drawTicks: false}}],
         }
     }
 };
