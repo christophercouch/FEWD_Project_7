@@ -35,7 +35,7 @@ $(document).ready(function () {
             });
         }
         else if ($('#user-search').val().length > 0) {
-            $('#message-user').append('<div id="confirmation"><p>Thanks!  Your message has been sent.</p><button id="new-message">New Message</button></div>')
+            $('#message-user').append('<div id="confirmation"><p>Message delivered!</p><button id="new-message">New Message</button></div>')
 
             $('#new-message').click(function () {
                 $('#confirmation').remove();

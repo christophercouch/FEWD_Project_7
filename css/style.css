@@ -294,10 +294,10 @@ h3 {
   display: flex;
   color: #7377bf;
   padding: 10px;
-  border: 1px solid gray;
+  border: 1px solid #d4d4d4;
   border-radius: 5px;
   margin: 5px;
-  background: #f3f4f7;
+  background: #fafafa;
   transition: width 300ms;
 }
 
@@ -331,7 +331,7 @@ h3 {
 }
 
 .social-number {
-  color: #666;
+  color: rgb(126, 126, 126);
   font-size: 32px;
   line-height: 32px;
   font-weight: 200;
@@ -367,7 +367,7 @@ h3 {
 }
 
 .member-name {
-  color: #4c4d6f;
+  color: #999999;
   font-weight: 600
 }
 
@@ -385,12 +385,12 @@ h3 {
 #message,
 #timezone {
   width: 100%;
-  border: 1px solid #bbbbbb;
+  border: 1px solid #d4d4d4;
   text-indent: 10px;
-  color: #bbbbbb;
+  color: #d4d4d4;
   margin-bottom: 10px;
   font-size: .9rem;
-  background: #f3f4f7;
+  background: #fafafa;
 }
 
 #user-search,
@@ -604,7 +604,7 @@ button#cancel {
     height: 2.5rem;
     width: 0;
     padding: 0;
-    border-right: 1px solid white;
+    border-right: 1px solid rgb(23, 26, 168);
     margin: 0 10px;
   }
   img.member-avatar {

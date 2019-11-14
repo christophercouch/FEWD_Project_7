@@ -19,9 +19,10 @@ let buttonArray = [hourlyButton, dailyButton, weeklyButton, monthlyButton];
 let hourlyTrafficData = {
     type: 'line',
     data: {
-        labels: ['12:00am-2:59am', '3:00am-5:59am', '6:00am-8:59am', '9:00am-11:59am', '12:00pm-2:59pm', '3:00pm-5:59pm', '6:00pm-8:59pm', '9:00pm-11:59pm'],
+        labels: ['10am', '11am', '12pm', '1pm',
+                 '2pm', '3pm', '4pm', '5pm'],
         datasets: [{
-            data: [20, 15, 25, 50, 100, 200, 150, 150],
+            data: [112, 276, 412, 320, 100, 96, 112, 453],
             backgroundColor: 'rgba(115, 120, 186, .2)',
             borderColor: 'rgba(115, 120, 186, .5)',
             borderWidth: 1,
@@ -39,8 +40,8 @@ let hourlyTrafficData = {
             yAxes: [{
                 ticks: {
                     min: 0,
-                    max: 300,
-                    stepSize: 100,
+                    max: 500,
+                    stepSize: 50,
                     padding: 20,
                 },
                 gridLines: {
@@ -57,7 +58,7 @@ let dailyTrafficData = {
     data: {
         labels: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
         datasets: [{
-            data: [75, 115, 175, 125, 225, 115, 115],
+            data: [75, 115, 175, 125, 225, 215, 115],
             backgroundColor: 'rgba(115, 120, 186, .2)',
             borderColor: 'rgba(115, 120, 186, .5)',
             borderWidth: 1,
@@ -216,9 +217,10 @@ let weeklyTrafficData = {
 let monthlyTrafficData = {
     type: 'line',
     data: {
-        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+        labels: ['January','February','March','April','May','June',
+                 'July','August','September','October','November','December'],
         datasets: [{
-            data: [4000, 4500, 5000, 4000, 6000, 5500, 4500, 8000, 9000, 7500, 6000, 6500],
+            data: [12943,11311,8356,7284,6700,18982,21300,17224,9010,7550,14428,22675],
             backgroundColor: 'rgba(115, 120, 186, .2)',
             borderColor: 'rgba(115, 120, 186, .5)',
             borderWidth: 1,
@@ -236,8 +238,8 @@ let monthlyTrafficData = {
             yAxes: [{
                 ticks: {
                     min: 0,
-                    max: 10000,
-                    stepSize: 1000,
+                    max: 25000,
+                    stepSize: 3125,
                     padding: 20,
                 },
                 gridLines: {
@@ -365,7 +367,7 @@ let mobileUsersChart = new Chart(mobileUsers, {
             'Desktop'
         ],
         datasets: [{
-            data: [112, 132, 409],
+            data: [96, 152, 409],
             backgroundColor: ['#80b0bd',
                               '#90c694',
                               '#7378ba']
