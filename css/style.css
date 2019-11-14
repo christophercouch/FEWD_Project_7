@@ -576,7 +576,6 @@ button#cancel {
     border-left: 1px solid lightgrey;
   }
   #traffic-charts h2 {
-    display: inline-block;
     float: left;
   }
   #traffic-chart-buttons {
